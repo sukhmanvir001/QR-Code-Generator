@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Bree+Serif&family=Changa+One:ital@1&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    background-color: rgb(248, 70, 70);
+    color: white;
+    font-family: 'Changa One', cursive;
+}
+
+.mainContainer{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+    padding: 40px 10px;
+}
+
+.containerInfo{
+    width: 400px;
+}
+
+.infoHeading{
+    font-family: 'Acme', sans-serif;
+}
+
+.infoPara{
+    font-family: 'Bree Serif', serif;
+}
+
+.infoPhoto{
+    height: 200px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.items{
+    height: 30px;
+    /* border: 2px solid black; */
+    border-radius: 5px;
+    width: 300px;
+    margin: 10px 5px;
+    font-family: 'Bree Serif', serif;
+}
+
+.urlInput{
+    background-color: rgb(203, 228, 220);
+
+}
+.selectHeading{
+    font-size: 1.2rem;
+    font-family: 'Bree Serif', serif;
+}
+
+.qrCode{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.codeHeading{
+    font-family: 'Acme', sans-serif;
+    display: none;
+}
+
+#qrcode{
+    margin: 10px;
+}
+
+#save-link{
+    border: 2px solid black;
+    background-color: lightgray;
+    color: black;
+    padding: 6px;
+    text-decoration: none;
+    font-family: 'Acme', sans-serif;
+    margin-bottom: 20px;
+}

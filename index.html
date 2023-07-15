@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <h2>QR CODE GENERATOR</h2>
+    </header>
+
+    <div class="mainContainer">
+        <div class="containerInfo">
+            <h1 class="infoHeading">QR CODE GENERATOR</h1>
+            <p class="infoPara">QR codes allow user to access your website simply and quickly.</p>
+            <p class="infoPara">Enter Your URL Below to generate the QR code and downlaod the image</p>
+
+            <form id="generate-form" class="form">
+                <input class="urlInput items" type="url" name="" id="url" placeholder="enter your URL">
+
+                <label class="selectHeading"> Select Size Of Your QR Code </label>  
+                <select class="items" id="size">  
+                <option value = "200"> 200 X 200   
+                </option>  
+                <option value = "300"> 300 X 300   
+                </option>  
+                <option value = "400"> 400 X 400  
+                </option>  
+                <option value = "500"> 500 X500  
+                </option>  
+                </select>
+                <button class="items" type="submit">GENERATE QR CODE</button>
+            </form>
+        </div>
+        
+
+        <div class="photo">
+            <img src="./pngfind.com-qr-code-png-315644.png" alt="" class="infoPhoto">
+        </div>
+    </div>
+
+
+    <div  id="generated" class="qrCode">
+        <h1 id="codeheading" class="codeHeading">YOUR QR CODE IS READY</h1>
+        <div id="qrcode"></div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
